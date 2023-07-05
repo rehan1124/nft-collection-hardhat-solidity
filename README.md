@@ -17,3 +17,17 @@ for verification on the block explorer. Waiting for verification result...
 Successfully verified contract Whitelist on the block explorer.
 https://sepolia.etherscan.io/address/0xd78Ef381Fc1983bBa25BfE1C7ffc87693484269b#code
 ```
+
+```
+[Command]
+npx hardhat run scripts/deploy-nft.js --network sepolia
+
+[Output]
+NFT contract address:  0x8A479Fd353fC14F81d9e925807049f0d77D8D499
+Successfully submitted source code for contract
+contracts/CryptoDevs.sol:CryptoDevs at 0x8A479Fd353fC14F81d9e925807049f0d77D8D499
+for verification on the block explorer. Waiting for verification result...
+
+Successfully verified contract CryptoDevs on the block explorer.
+https://sepolia.etherscan.io/address/0x8A479Fd353fC14F81d9e925807049f0d77D8D499#code
+```
