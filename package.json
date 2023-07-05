@@ -1,0 +1,27 @@
+{
+  "name": "nft-collection-hardhat-solidity",
+  "version": "1.0.0",
+  "description": "Build an NFT collection dApp with a whitelist using Hardhat and Solidity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rehan1124/nft-collection-hardhat-solidity.git"
+  },
+  "keywords": [],
+  "author": "Syed Rehan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rehan1124/nft-collection-hardhat-solidity/issues"
+  },
+  "homepage": "https://github.com/rehan1124/nft-collection-hardhat-solidity#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.16.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
