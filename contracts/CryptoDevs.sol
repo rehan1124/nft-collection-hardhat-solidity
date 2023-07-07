@@ -35,7 +35,6 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
             "Max supply exceeded."
         );
 
-        //
         if (whitelist.whitelistedAddress(msg.sender) && msg.value < price) {
             require(balanceOf(msg.sender) == 0, "Already own a NFT.");
 

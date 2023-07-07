@@ -2,6 +2,14 @@
 
 ### Build an NFT collection dApp with a whitelist using Hardhat and Solidity
 
+---
+
+[TODO]
+
+- Remove parameter from `addAddressToWhitelist` function in Whitelist.sol and redeploy contracts - Whitelist.sol and CryptoDevs.sol
+
+---
+
 - To deploy contract, run below command and wait for output.
 
 ```
@@ -31,3 +39,5 @@ for verification on the block explorer. Waiting for verification result...
 Successfully verified contract CryptoDevs on the block explorer.
 https://sepolia.etherscan.io/address/0x8A479Fd353fC14F81d9e925807049f0d77D8D499#code
 ```
+
+---
