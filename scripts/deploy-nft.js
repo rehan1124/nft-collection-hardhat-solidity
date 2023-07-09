@@ -1,5 +1,7 @@
 const hre = require("hardhat");
 
+const CONTRACT_ADDRESS = "0xB79CbC2f3e4C9d18bCC0DCfA43bCFe55C5D781cF";
+
 async function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -7,7 +9,7 @@ async function sleep(ms) {
 async function main() {
   // Deploy the CryptoDevs Contract
   const nftContract = await hre.ethers.deployContract("CryptoDevs", [
-    "0xd78Ef381Fc1983bBa25BfE1C7ffc87693484269b",
+    CONTRACT_ADDRESS,
   ]);
 
   // wait for the contract to deploy
@@ -22,7 +24,7 @@ async function main() {
   // Verify the contract on etherscan
   await hre.run("verify:verify", {
     address: nftContract.target,
-    constructorArguments: ["0xd78Ef381Fc1983bBa25BfE1C7ffc87693484269b"],
+    constructorArguments: [CONTRACT_ADDRESS],
   });
 }
 

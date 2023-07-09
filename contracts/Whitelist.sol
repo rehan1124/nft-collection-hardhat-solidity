@@ -15,9 +15,12 @@ contract Whitelist {
         maxWhitelistAddresses = _maxWhitelistAddresses;
     }
 
-    function addAddressToWhitelist(address _addr) public {
+    function addAddressToWhitelist() public {
         // Check if user/address is already whitelisted
-        require(!whitelistedAddress[_addr], "Address is already whitelisted.");
+        require(
+            !whitelistedAddress[msg.sender],
+            "Address is already whitelisted."
+        );
 
         // Check if number of user/whitelisted address has reached max count
         require(
@@ -26,7 +29,7 @@ contract Whitelist {
         );
 
         // Updated whitelist address and increase count
-        whitelistedAddress[_addr] = true;
+        whitelistedAddress[msg.sender] = true;
         totalWhitelistedAddresses += 1;
     }
 }
